@@ -77,10 +77,22 @@ h1, h2, h3, h4, h5, h6{
 	margin: 5px 0;
 	display: inline-block;
 	border: none;
+	transition: background-color 1.5s, transform;	/*Recurso beta*/
 }
-.botao:hover{
+.botao:hover, .botao:focus{
 	text-decoration: none;
 	background-color: #E10832;
+	transform: scale(1.1);	/*Recurso beta*/
+}
+.pagina-atual{
+	background-color: azure;
+	color: #920d27;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
 }
 /*layout*/
 a{
@@ -101,6 +113,7 @@ nav ul li a{
 	text-decoration: none;
 	padding: 5px 10px;
 	border-radius: 3px;
+	transition: background-color 1.5s;	/*Recurso beta*/
 }
 nav ul li a:hover{
 	background-color: azure;
