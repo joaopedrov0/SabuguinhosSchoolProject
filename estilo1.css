@@ -49,6 +49,12 @@ body{
 	width: 940px
 }
 /*estilos reutilizaveis*/
+.material-icons-outlined{
+	font-family: 'Material Icons';
+	font-size: 48px;
+	font-weight: 400;
+	display: absolute;
+}
 .sem-marcador{
     list-style: none !important;
 }
@@ -77,7 +83,7 @@ h1, h2, h3, h4, h5, h6{
 	margin: 5px 0;
 	display: inline-block;
 	border: none;
-	transition: background-color 1.5s, transform;	/*Recurso beta*/
+	transition: background-color 1.0s, transform 0.5s;	/*Recurso beta*/
 }
 .botao:hover, .botao:focus{
 	text-decoration: none;
@@ -118,9 +124,10 @@ nav ul li a{
 nav ul li a:hover{
 	background-color: azure;
 	color: #920d27;
-	font-weight: 400;
+	/*font-weight: 400;*/
 	cursor: pointer;
 	text-decoration: none;
+	/*transition: 1.5s;	/*Recurso beta*/
 }
 ul li{
 	margin-bottom: 15px;
@@ -157,6 +164,22 @@ img{
 	background-image: linear-gradient(to right, #920d27, #540413);
 	color: azure;
 }
+.linkcontato{
+	color: #920d27;
+	padding: 0;
+	cursor: pointer;
+	border-radius: 3px;
+	margin: 5px 0;
+	display: inline-block;
+	border: none;
+	background-color: transparent;
+	transition: color 1.5s;	/*Recurso beta*/
+}
+.linkcontato:hover{
+	text-decoration: none;
+	color: #E10832;
+	background-color: transparent;
+}
 /*Formulário*/
 fieldset{
 	border-radius: 5px;
@@ -179,7 +202,4 @@ textarea{
 .campo{
 	margin: 15px;
 	text-align: right;
-}
-.botao{
-	border: none;
 }
